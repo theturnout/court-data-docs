@@ -30,3 +30,5 @@ Alternatively, the JSON-LD data may be embedded inline by inserting it between t
     <script type="application/ld+json">
         <DATA>
     </script>
+
+[...]
