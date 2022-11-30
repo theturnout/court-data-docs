@@ -15,13 +15,13 @@ of a particular government organization.
 
 **Associated Properties:**
 
--  `areaServed <#area-served>`__
+-  :ref:`areaServed <dictionary/properties:area served>`
 
--  `containsPlace <#local-court>`__
+-  :ref:`containsPlace <dictionary/properties:local court>`
 
--  `geoContains <#composing-administrative-area>`__
+-  :ref:`geoContains <dictionary/properties:composing administrative area>`
 
--  `name <#name>`__
+-  :ref:`name <dictionary/properties:name>`
 
 ContactPoint
 ~~~~~~~~~~~~
