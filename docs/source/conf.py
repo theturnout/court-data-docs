@@ -14,7 +14,13 @@ release = '1.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autosectionlabel']
+extensions = [
+    'sphinx.ext.autosectionlabel',
+    'myst_parser',
+]
+
+# Necessary for autosectionlabel (making unique header targets)
+autosectionlabel_prefix_document = True
 
 templates_path = ['_templates']
 exclude_patterns = []
