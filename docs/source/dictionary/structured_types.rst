@@ -32,13 +32,13 @@ offers.
 
 **Associated Properties:**
 
--  `contactType <#contact-type>`__
+-  :ref:`contactType <dictionary/properties:contact type>`
 
--  `description <#contact-name>`__
+-  :ref:`description <dictionary/properties:contact name>`
 
--  `email <#contact-email>`__
+-  :ref:`email <dictionary/properties:contact email>`
 
--  `telephone <#telephone>`__
+-  :ref:`telephone <dictionary/properties:contact telephone>`
 
 Courthouse
 ~~~~~~~~~~
@@ -48,31 +48,31 @@ especially those involving courts and judges or other officials.
 
 **Associated Properties:**
 
--  `areaServed <#area-served>`__
+-  :ref:`areaServed <dictionary/properties:area served>`
 
--  `conditionsOfAccess <#conditions-of-access>`__
+-  :ref:`conditionsOfAccess <dictionary/properties:conditions of access>`
 
--  `contactPoint <#contactpoint>`__
+-  :ref:`contactPoint <dictionary/properties:contact point>`
 
--  `hasOfferCatalog <#has-amenities>`__
+-  :ref:`hasOfferCatalog <dictionary/properties:has amenities>`
 
--  `image <#courthouse-image>`__
+-  :ref:`image <dictionary/properties:courthouse image>`
 
--  `knowsLanguage <#languages-spoken>`__
+-  :ref:`knowsLanguage <dictionary/properties:languages spoken>`
 
--  `location <#location>`__
+-  :ref:`location <dictionary/properties:location>`
 
--  `mattersServed <#matters-served>`__
+-  :ref:`mattersServed <dictionary/properties:matters served>`
 
--  `name <#name>`__
+-  :ref:`name <dictionary/properties:name>`
 
--  `publicAccess <\l>`__
+-  :ref:`publicAccess <dictionary/properties:open to public>`
 
--  `suborganization <#court>`__
+-  :ref:`suborganization <dictionary/properties:court>`
 
--  `url <#court-webpage>`__
+-  :ref:`url <dictionary/properties:court webpage>`
 
--  `requiresArrangement <#features-requiring-arrangement>`__
+-  :ref:`requiresArrangement <dictionary/properties:features requiring arrangement>`
 
 CourtSystem
 ~~~~~~~~~~~
@@ -82,13 +82,13 @@ and courthouses.
 
 **Associated Properties:**
 
--  `areaServed <#area-served>`__
+-  :ref:`areaServed <dictionary/properties:area served>`
 
--  `geoContains <#composing-administrative-area>`__
+-  :ref:`geoContains <dictionary/properties:composing administrative area>`
 
--  `containsPlace <#local-court>`__
+-  :ref:`containsPlace <dictionary/properties:local court>`
 
--  `name <#name>`__
+-  :ref:`name <dictionary/properties:name>`
 
 OfferCatalog
 ~~~~~~~~~~~~
@@ -98,7 +98,7 @@ information about amenities.
 
 **Associated Properties:**
 
--  `itemListElement <#amenities-offered>`__
+-  :ref:`itemListElement <dictionary/properties:amenities offered>`
 
 OpeningHoursSpecification
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -108,11 +108,11 @@ courthouse is open to the public.
 
 **Associated Properties:**
 
--  `closes <#close-time>`__
+-  :ref:`closes <dictionary/properties:close time>`
 
--  `dayOfWeekdayOfWeek <#open-days>`__
+-  :ref:`dayOfWeekdayOfWeek <dictionary/properties:open days>`
 
--  `opens <#open-time>`__
+-  :ref:`opens <dictionary/properties:open time>`
 
 Place
 ~~~~~
@@ -122,11 +122,11 @@ extension.
 
 **Associated Properties:**
 
--  `address <#address>`__
+-  :ref:`address <dictionary/properties:address>`
 
--  `openingHoursSpecification <#openinghoursspecification>`__
+-  :ref:`openingHoursSpecification <dictionary/properties:business hours>`
 
--  `hasMap <#map-url>`__
+-  :ref:`hasMap <dictionary/properties:map url>`
 
 PostalAddress
 ~~~~~~~~~~~~~
@@ -136,10 +136,10 @@ located.
 
 **Associated Properties:**
 
--  `addressLocality <#city>`__
+-  :ref:`addressLocality <dictionary/properties:city>`
 
--  `addressRegion <#state>`__
+-  :ref:`addressRegion <dictionary/properties:state>`
 
--  `postalCode <#postalCode>`__
+-  :ref:`postalCode <dictionary/properties:zip code>`
 
--  `streetAddress <#street-address>`__
+-  :ref:`streetAddress <dictionary/properties:street address>`
