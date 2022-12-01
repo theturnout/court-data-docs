@@ -32,4 +32,10 @@ Court Data Standard Project Documentation
    :caption: Technical Documentation
    
    technical/data_format
+   technical/example
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Tooling
+   
    technical/pipeline

@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Court Data Standardizaton Project'
-copyright = '2022, The Turnout'
-author = 'The Turnout'
+copyright = '2022, Pew Charitable Trusts'
+author = 'Pew Charitable Trusts'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------
