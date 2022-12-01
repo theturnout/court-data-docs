@@ -11,6 +11,13 @@ Court Data Standard Project Documentation
    
    master_doc
 
+.. toctree:: 
+   :maxdepth: 2
+   :caption: Standard Concepts
+
+   concepts/courthouse
+   concepts/court_system
+
 .. toctree::
    :maxdepth: 2
    :caption: Standard Vocabulary
@@ -25,4 +32,4 @@ Court Data Standard Project Documentation
    :caption: Technical Documentation
    
    technical/data_format
-   technical/tooling
+   technical/pipeline
