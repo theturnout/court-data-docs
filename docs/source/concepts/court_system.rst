@@ -1,7 +1,7 @@
 Representing Court Systems
 ==========================
 
-Typically, an individual courthouse will occupy some position within a state system's administrative structre. For example, Example County Courthouse might be part of Division 1, which is part of Circuit 1, which is the largest subdivision of the state court system. A conceptual depicition of this mapping is below. Indented elements should be understood to be contained within or in the jurisdiction of the element above.
+Typically, an individual courthouse will occupy some position within a state system's administrative structure. For example, Example County Courthouse might be part of Division 1, which is part of Circuit 1, which is the largest subdivision of the state court system. A conceptual depiction of this mapping is below. Indented elements should be understood to be contained within the jurisdiction of the element above.
 
 .. code-block:: text
 

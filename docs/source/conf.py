@@ -16,7 +16,6 @@ release = '1.0'
 
 extensions = [
     'sphinx.ext.autosectionlabel',
-    'myst_parser',
 ]
 
 # Necessary for autosectionlabel (making unique header targets)
