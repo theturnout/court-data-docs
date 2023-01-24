@@ -15,26 +15,24 @@ Requirements
 Description
 -----------
 
-The Court Data Pipeline is designed to scrape websites provided as a list of URLs in a CSV file. It looks for JSON-LD files either linked from or embedded in HTML source code and downloads or scrapes and parses the data to save it locally. The files are then validated against a `SHACL schema <https://www.w3.org/TR/shacl/>`, with property values checked against constraints defined by remote sources identified in the JSON-lD file. After passing validation, the JSON-LD data is then loaded into a database. The database can be queried using `SPARQL <https://www.w3.org/TR/sparql11-query/>` as the query language.
+The Court Data Pipeline is designed to scrape websites provided as a list of URLs in a CSV file. It looks for JSON-LD files either linked from or embedded in HTML source code and downloads or scrapes and parses the data to save it locally. The files are then validated against a `SHACL schema<https://www.w3.org/TR/shacl/>`, with property values checked against constraints defined by remote sources identified in the JSON-lD file. After passing validation, the JSON-LD data is then loaded into a database. The database can be queried using `SPARQL<https://www.w3.org/TR/sparql11-query/>` as the query language.
 
 Components
 ~~~~~~~~~~
 
-The pipeline is broken into three main functions, each contained within a script in the :code:`scripts` folder. The functions are web scraping, validation, and storage.
+The pipeline is broken into three main functions: web scraping, validation, and storage. Source code for the scraper can be found in :code:`classes/json_scraper.py`, for the validator in :code:`classes/validator.py`, and for the DB importer in :code:`components/data_importer.py`.
 
 Web Scraping
 ************
 
-The :code:`scrapy` library is used as the basis for web scraping functions. The script ingests a CSV file of URLs provided as an argument when calling the main :code:`cd_pipeline.py` script. The provided websites are crawled and, where JSON-LD data is found, parses and saves it in the :code:`data/raw_json` directory.
+The :code:`scrapy` library is used as the basis for web scraping functions. The script ingests a CSV file of URLs provided as an argument when calling the main :code:`app.py` script from the CLI. The provided websites are crawled and, where JSON-LD data is found, it is parsed and saved in the :code:`data/json/scraped` directory.
 
 Validation
 **********
 
-Constraints for JSON-LD files are defined in a SHACL file, which identifies permitted values for types and properties on https://schema.org and developed for the Standard. The SHACL file and the Court Data Standard definitions created for this project can be found in the :code:`data/defs` directory. The validation itself is performed by :code:`pyshacl`. Files that pass validation are then stored in the :code:`data/valid_json` directory.
+Constraints for JSON-LD files are defined in a SHACL file, which identifies permitted values for types and properties on https://schema.org and as well as developed for the Standard. The SHACL file and the Court Data Standard definitions created for this project can be found in the :code:`data/defs` directory. The validation itself is performed by :code:`pyshacl`. Files that pass validation are then passed to the :code:`data_importer` script.
 
 Storage
 *******
 
-Files in the `data/valid_json` directory are parsed and transformed from triples to data that can be stored in SQL datastores. Data in these stores is not very human-readable but can be reassembled using SPARQL queries. The `queries` directory contains examples of SPARQL queries and the `db_exporter.py` script in the `scripts` directory can be run to extract data stored by the pipeline.
-
-Refer to the :code:`readme.md` file in the project's GitHub repository, linked above, for detailed instructions for running the pipeline.
+Data passed from the :code:`validator`` are parsed and transformed from RDF triples to flat data that can be stored in SQL datastores. Data in these stores is not very human-readable but can be reassembled using SPARQL queries. The `queries` directory contains examples of SPARQL queries and the `run_query.py` script that can be run to extract data stored by the pipeline. See the documentation in the tool's GitHub repo, linked above, for more information about executing SQARQL queries on the Court Data Standard example data.
