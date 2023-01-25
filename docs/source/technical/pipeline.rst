@@ -15,7 +15,7 @@ Requirements
 Description
 -----------
 
-The Court Data Pipeline is designed to scrape websites provided as a list of URLs in a CSV file. It looks for JSON-LD files either linked from or embedded in HTML source code and downloads or scrapes and parses the data to save it locally. The files are then validated against a `SHACL schema<https://www.w3.org/TR/shacl/>`, with property values checked against constraints defined by remote sources identified in the JSON-lD file. After passing validation, the JSON-LD data is then loaded into a database. The database can be queried using `SPARQL<https://www.w3.org/TR/sparql11-query/>` as the query language.
+The Court Data Pipeline is designed to scrape websites provided as a list of URLs in a CSV file. It looks for JSON-LD files either linked from or embedded in HTML source code and downloads or scrapes and parses the data to save it locally. The files are then validated against a `SHACL schema <https://www.w3.org/TR/shacl/>`, with property values checked against constraints defined by remote sources identified in the JSON-lD file. After passing validation, the JSON-LD data is then loaded into a database. The database can be queried using `SPARQL <https://www.w3.org/TR/sparql11-query/>` as the query language.
 
 Components
 ~~~~~~~~~~
@@ -35,4 +35,4 @@ Constraints for JSON-LD files are defined in a SHACL file, which identifies perm
 Storage
 *******
 
-Data passed from the :code:`validator`` are parsed and transformed from RDF triples to flat data that can be stored in SQL datastores. Data in these stores is not very human-readable but can be reassembled using SPARQL queries. The `queries` directory contains examples of SPARQL queries and the `run_query.py` script that can be run to extract data stored by the pipeline. See the documentation in the tool's GitHub repo, linked above, for more information about executing SQARQL queries on the Court Data Standard example data.
+Data passed from the :code:`validator` is parsed and transformed from RDF triples to flat data that can be stored in SQL datastores. Data in these stores is not very human-readable but can be reassembled using SPARQL queries. The :code:`queries` directory contains examples of SPARQL queries and the `run_query.py` script that can be run to extract data stored by the pipeline. See the documentation in the tool's GitHub repo, linked above, for more information about executing SQARQL queries on the Court Data Standard example data.
